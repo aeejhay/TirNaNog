@@ -5,8 +5,8 @@ var words = ['Buy 3 Get 3 Free Everything', 'Visit Ace\'s Promotion Page', 'Join
     len = words.length,
     forwards = true,
     skip_count = 0,
-    skip_delay = 15,
-    speed = 70;
+    skip_delay = 14,
+    speed = 60;
 var wordflick = function () {
   setInterval(function () {
     if (forwards) {
