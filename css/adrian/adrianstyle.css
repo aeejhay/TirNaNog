@@ -78,6 +78,11 @@ button#go-to-payment {
 
 /* payment page*/
 
+div#cart-summary {
+    padding: 50px;
+    background: #eeeeee;
+}
+
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     background-color: #6b9287;
 }
