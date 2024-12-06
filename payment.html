@@ -9,8 +9,7 @@
 		<meta name="title" content="Tír na nÓg | Payment Page | Selling Best Design Jewelry in Dublin">
 		<meta name="description" content="Tír na nÓg is gaelic term means land of eternal youth is brand new business in business specialized in selling high quality and design jewelry products across all the land of Dublin">
 		<meta name="keywords" content="Tír na nÓg, jewelry, ring, earrings, bracelet, rings, dublin city">
-		<meta name="robots" content="index, follow">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="robots" content="index, follow">		
 		<meta name="language" content="English">
 		
 		<!-- Google Font -->
@@ -32,6 +31,7 @@
 		
 		<!-- JQuery for this page (Payment Page)-->
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="./js/payment.js"></script>
 		
 		<!-- General CSS -->
 		<link rel="stylesheet" href="./css/general.css">
@@ -134,12 +134,12 @@
 					<div class="tab-content">
 						<!-- credit card info-->
 						<div id="credit-card" class="tab-pane fade show active pt-3">
-							<form role="form">
+							<form id="the-form">
 								<div class="form-group"> 
-									<label for="username">Card Owner</label>
+									<label>Card Owner</label>
 									<input type="text" name="username" placeholder="Card Owner Name" required class="form-control "> </div>
 								<div class="form-group"> 
-									<label for="cardNumber">Card number</label>
+									<label>Card number</label>
 									<div class="input-group"> <input type="text" name="cardNumber" placeholder="Valid card number" class="form-control " required>
 										<div class="input-group-append"> <span class="input-group-text text-muted"></span> </div>
 									</div>
@@ -181,9 +181,9 @@
 					</div> <!-- End -->
 					<!-- bank transfer info -->
 					<div id="net-banking" class="tab-pane fade pt-3">
-						<div class="form-group"> <label for="Select Your Bank">
-							<h6>Select your Bank</h6>
-							</label> <select class="form-control" id="ccmonth">
+						<div class="form-group">
+							<label>Select your Bank</label>
+								<select class="form-control" id="ccmonth">
 								<option value="" selected disabled>--Please select your Bank--</option>
 								<option>AIS</option>
 								<option>PTSB</option>
@@ -191,12 +191,12 @@
 								<option>Revolut</option>
 								<option>Maney Jar</option>
 								<option>N26</option>							
-							</select> </div>
-							<div class="form-group">
-								<p> <button type="button" class="btn btn-primary "><i class="fas fa-mobile-alt mr-2"></i> Proceed Payment</button> </p>
-							</div>
-							<p class="text-muted">Note: When you click on the button you will be taken to another page that is safe to enter your payment information. After successful completion of payment you will be automatically redirected to the website to see the details of the order. </p>
-						</div> <!-- End -->
+								</select> 
+						</div>
+						<div class="form-group">
+							<p> <button type="button" class="btn btn-primary ">Proceed Payment</button> </p>
+						</div>
+						<p class="text-muted">Note: When you click on the button you will be taken to another page that is safe to enter your payment information. After successful completion of payment you will be automatically redirected to the website to see the details of the order. </p>
 					</div>
 				</div>
 			</div>
@@ -247,8 +247,10 @@
 					</div>
 				</div>
 			</div>
+			
+			<script src="./js/add-to-cart.js"></script>
 		</footer>
 		
-		<script src="./js/add-to-cart.js"></script>
+		
 		
 </html><!-- Closing HTML tag -->
