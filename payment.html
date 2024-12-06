@@ -2,8 +2,16 @@
 <html lang="en-US"><!-- Opening HTML tag -->
 	<head><!-- Opening HEAD tag -->
 		<title>Payment Page</title><!-- Title -->
+		
+		<!-- Meta Tags Here -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="title" content="Tír na nÓg | Payment Page | Selling Best Design Jewelry in Dublin">
+		<meta name="description" content="Tír na nÓg is gaelic term means land of eternal youth is brand new business in business specialized in selling high quality and design jewelry products across all the land of Dublin">
+		<meta name="keywords" content="Tír na nÓg, jewelry, ring, earrings, bracelet, rings, dublin city">
+		<meta name="robots" content="index, follow">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="language" content="English">
 		
 		<!-- Google Font -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -126,46 +134,55 @@
 					<div class="tab-content">
 						<!-- credit card info-->
 						<div id="credit-card" class="tab-pane fade show active pt-3">
-							<form role="form" onsubmit="alert('You Have Submitted Your Payment')">
-								<div class="form-group"> <label for="username">
-										<h6>Card Owner</h6>
-									</label> <input type="text" name="username" placeholder="Card Owner Name" required class="form-control "> </div>
-								<div class="form-group"> <label for="cardNumber">
-										<h6>Card number</h6>
-									</label>
+							<form role="form">
+								<div class="form-group"> 
+									<label for="username">Card Owner</label>
+									<input type="text" name="username" placeholder="Card Owner Name" required class="form-control "> </div>
+								<div class="form-group"> 
+									<label for="cardNumber">Card number</label>
 									<div class="input-group"> <input type="text" name="cardNumber" placeholder="Valid card number" class="form-control " required>
 										<div class="input-group-append"> <span class="input-group-text text-muted"></span> </div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-sm-8">
-										<div class="form-group"> <label><span class="hidden-xs">
-													<h6>Expiration Date</h6>
-												</span></label>
-											<div class="input-group"> <input type="number" placeholder="MM" name="" class="form-control" required> <input type="number" placeholder="YY" name="" class="form-control" required> </div>
+										<div class="form-group"> 
+											<label>Expiration Date</label>
+											<div class="input-group">
+												<input type="number" placeholder="MM" name="month" class="form-control" required> <input type="number" placeholder="YY" name="year" class="form-control" required>
+											</div>
 										</div>
 									</div>
 									<div class="col-sm-4">
-										<div class="form-group mb-4"> <label data-toggle="tooltip" title="Three digit CV code on the back of your card">
-												<h6>CVV</h6>
-											</label> <input type="text" required class="form-control"> </div>
+										<div class="form-group mb-4">
+											<label data-toggle="tooltip" title="Three digit CV code on the back of your card">CVV</label> 
+											<input type="text" required class="form-control"> </div>
 									</div>
 								</div>
-								<div class="card-footer"> <button type="button" class="subscribe btn btn-primary btn-block shadow-sm"> Confirm Payment </button>
+								<div class="card-footer">
+									<button type="button" class="subscribe btn btn-primary btn-block shadow-sm"> Confirm Payment </button>
+								</div>
 							</form>
 						</div>
 					</div> <!-- End -->
 					<!-- Paypal info -->
 					<div id="paypal" class="tab-pane fade pt-3">
 						<h6 class="pb-2">Select your paypal account type</h6>
-						<div class="form-group "> <label class="radio-inline"> <input type="radio" name="optradio" checked> Domestic </label> <label class="radio-inline"> <input type="radio" name="optradio" class="ml-5">International </label></div>
+						<div class="form-group">
+							<label class="radio-inline">
+								<input type="radio" name="optradio" checked> Domestic
+							</label> 
+							<label class="radio-inline">
+								<input type="radio" name="optradio" class="ml-5">International
+							</label>
+						</div>
 						<p> <button type="button" class="btn btn-primary ">Log into my Paypal</button> </p>
 						<p class="text-muted"> Note: When you click on the button you will be taken to another page that is safe to enter your payment information. After successful completion of payment you will be automatically redirected to the website to see the details of the order. </p>
 					</div> <!-- End -->
 					<!-- bank transfer info -->
 					<div id="net-banking" class="tab-pane fade pt-3">
-						<div class="form-group "> <label for="Select Your Bank">
-								<h6>Select your Bank</h6>
+						<div class="form-group"> <label for="Select Your Bank">
+							<h6>Select your Bank</h6>
 							</label> <select class="form-control" id="ccmonth">
 								<option value="" selected disabled>--Please select your Bank--</option>
 								<option>AIS</option>
@@ -187,51 +204,51 @@
 		
 		
 		
+		<!-- Footer Section Here -->
 		<footer>
 			<div class="container">
-			  <div class="row">
-				<div id="quicklinks" class="col">
-				  <h3>Quick Links</h3>
-				  <ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Promotion</a></li>
-					<li><a href="#">Payment</a></li>
-					<li><a href="#">Contact Us</a></li>
-				  </ul>			  
-				</div>
-				<div id="connect" class="col-6">
-					<h3>Let’s Connect</h3>
-					<p>Join us via whatsApp or email newsletter to unlock <strong>10% OFF*</strong>
-					plus so much more!</p>
-					<a href="https://web.whatsapp.com/" target="_blank" class="ajbutton" id="connect-btn">I Want to Join!</a>
-					<h3>Connect with us!</h3>
-					<ul class="connect-socials-footer">
-								<li><a href="https://www.facebook.com" target="_blank"><img src="./images/icons8-facebook-64.png" alt="Facebook Icon" ></a></li>
-								<li><a href="https://www.instagram.com" target="_blank"><img src="./images/icons8-instagram-64.png" alt="Instagram Icon" ></a></li>
-								<li><a href="https://www.tiktok.com" target="_blank"><img src="./images/icons8-tiktok-64.png" alt="Tiktok Icon" ></a></li>
-					</ul>
-				</div>
-				<div id="download" class="col">
-					<h3>Download</h3>
-					<ul>
-						<li><img src="./images/google-play.webp" /></li>
-						<li><img src="./images/apple.webp" /></li>
-						
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-				<div id="copyright">
-					<div class="container">
-						<p>&copy; Tír na nÓg Collections, 2024. All Rihts Reserved.</p>
+				<div class="row">
+					<div id="quicklinks" class="col">
+					  <h3>Quick Links</h3>
+					  <ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="products.html">Products</a></li>
+						<li><a href="promotion.html">Promotion</a></li>
+						<li><a href="payment.html">Payment</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					  </ul>			  
+					</div>
+					<div id="connect" class="col-6">
+						<h3>Let’s Connect</h3>
+						<p>Join us via whatsApp or email newsletter to unlock <strong>10% OFF*</strong>
+						plus so much more!</p>
+						<a href="https://web.whatsapp.com/" target="_blank" class="ajbutton" id="connect-btn">I Want to Join!</a>
+						<h3>Connect with us!</h3>
+						<ul class="connect-socials-footer">
+									<li><a href="https://www.facebook.com" target="_blank"><img src="./images/icons8-facebook-64.png" alt="Facebook Icon"></a></li>
+									<li><a href="https://www.instagram.com" target="_blank"><img src="./images/icons8-instagram-64.png" alt="Instagram Icon"></a></li>
+									<li><a href="https://www.tiktok.com" target="_blank"><img src="./images/icons8-tiktok-64.png" alt="Tiktok Icon"></a></li>
+						</ul>
+					</div>
+					<div id="download" class="col">
+						<h3>Download</h3>
+						<ul>
+							<li><img src="./images/google-play.webp" alt="Google Play Icon"></li>
+							<li><img src="./images/apple.webp" alt="Apple Icon"></li>
+							
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+					<div id="copyright">
+						<div class="container">
+							<p>&copy; Tír na nÓg Collections, 2024. All Rihts Reserved.</p>
+						</div>
 					</div>
 				</div>
 			</div>
-			
-			<script src="./js/payment.js"></script>
 		</footer>
 		
-	</body><!-- Closing BODY tag -->
-
+		<script src="./js/add-to-cart.js"></script>
+		
 </html><!-- Closing HTML tag -->
