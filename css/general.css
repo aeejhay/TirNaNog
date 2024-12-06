@@ -188,3 +188,103 @@ div#copyright {
     width: 100%;
     padding-top: 20px;
 }
+
+
+/* Mobile Responsive by Adrian */ 
+
+
+/* IPAD 1024px */
+@media only screen and (max-width: 1024px) {
+	div#opening-hours {
+		text-align: center;
+	}
+
+	a.nav-item.nav-link {
+		font-size: 15px;
+	}
+
+	div#collections li {
+		float: none;
+		display: flex;
+		justify-content: center;
+	}
+
+	.card {
+		text-align: center;
+	}
+
+	.ajbutton {
+		padding: 10px;
+		margin-top: 14px;
+	}	
+}
+
+/* IPAD 768px */
+@media only screen and (max-width: 768px) {
+
+	.col, .col-6, div#opening-hours {
+		width: 100%;
+		float: none;
+		flex: unset;
+		text-align: center;
+		max-width: 100%;
+	}
+
+	.float-left, .float-right {
+		float: none !important;
+		text-align: center;
+	}
+
+	ul.social-medias {
+		width: 147px;
+		margin: 0 auto;
+	}
+	
+	h1#logo {
+		color: #ffffff;
+		padding: 10px 0;
+	}
+
+	.search {
+		margin: 10px;
+	}
+
+	input#search-input {
+		min-width: 87%;
+	}
+
+	div#opening-hours {
+		margin-bottom: 20px;
+	}
+
+	ul.connect-socials-footer {
+			height: 10px;
+			width: 125px;
+			margin: 0 auto 50px;
+	}
+	
+}
+
+/* MOBILE 500px */
+@media only screen and (max-width: 500px) {	
+	body {
+		text-align: center;
+	}
+
+	input#search-input {
+		min-width: 100%;
+	}
+		
+	button.btn.my-2.my-sm-0 {
+	width: 100%;
+	}
+
+	div#featured-products {
+		padding: 0px;
+	}
+
+	footer {
+		padding: 50px 0;
+	}	
+}
+
